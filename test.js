@@ -6,7 +6,7 @@ class Employee {
     this.subordinatesArray = subordinatesArray;
   }
 }
-//the solution class receives the array of all employees, and a given employee, and will return the given employees importance.
+//the solution class receives the array of all employees, and a given employee's id, and will return the given employees importance.
 class Solution {
   constructor(companyArray, employeeId) {
     this.companyArray = companyArray;
@@ -16,7 +16,7 @@ class Solution {
     this.findGivenIdAndSubordinates(companyArray, employeeId);
   }
 
-  //find the given id in the array of all company eployees and get its importance value and its subordinate employees
+  //finds the given id in the array of all company employees and returns its importance value and its subordinate employees 
   findGivenIdAndSubordinates(companyArray, givenEmployeeId) {
     let subordiateEmployeesArray;
     let givenEmployeesImportance;
